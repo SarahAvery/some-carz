@@ -1,0 +1,153 @@
+#reviews {
+  padding: 75px 0;
+  // background: #001e50;
+  background: #fff;
+  // color: #fff;
+  color: #000;
+
+  #reviews-container {
+    max-width: 1434px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title-container {
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .button-container {
+    width: 100%;
+    align-self: flex-end;
+
+    .button {
+      a {
+        // border: 2px solid #fff;
+        border: 2px solid #000;
+        // color: #fff;
+        color: #000;
+      }
+    }
+  }
+
+  .quote-container {
+    width: 50%;
+
+    .quote {
+      position: relative;
+      padding: 38px;
+    }
+
+    .quote-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 100%;
+      transform: translateX(-19px);
+
+      .icon,
+      img {
+        height: 33px;
+        width: 33px;
+      }
+    }
+  }
+
+  .title {
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+  }
+
+  .para {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 0.85rem;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .line {
+    width: 8.33%;
+    // border-top: 1px solid #fff;
+    border-top: 1px solid #000;
+    margin-right: 25px;
+    margin-top: calc(25px + 24px / 2);
+  }
+}
+
+// small
+@media screen and (max-width: 768px) {
+  #reviews {
+    .quote-container {
+      margin-left: 8.33%;
+    }
+    padding: 56px 0;
+    #reviews-container {
+      padding-right: 1.4rem;
+      padding-left: 1.4rem;
+      justify-content: center;
+    }
+
+    .title-container {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .title {
+      padding-bottom: 25px;
+    }
+
+    .quote-container {
+      display: none;
+    }
+  }
+}
+
+// medium
+@media print, screen and (min-width: 820px) {
+  #reviews {
+    padding: 56px 0;
+    #reviews-container {
+      padding-right: 1.15rem;
+      padding-left: 1.15rem;
+    }
+    .content {
+      font-size: 0.85rem;
+      line-height: 1.25rem;
+      width: calc(100% - 0.625rem);
+      margin-left: 0.3125rem;
+      margin-right: 0.3125rem;
+    }
+  }
+}
+
+// large
+@media print, screen and (min-width: 1029px) {
+  #reviews {
+    padding: 75px 0;
+
+    .content {
+      width: calc(50% - 1.25rem);
+      margin-left: 0.625rem;
+      margin-right: 0.625rem;
+    }
+    #reviews-container {
+      padding-right: 1.65rem;
+      padding-left: 1.65rem;
+    }
+    .quote-container {
+      margin-left: 16.666%;
+    }
+
+    .button-container {
+      width: 100%;
+    }
+  }
+}

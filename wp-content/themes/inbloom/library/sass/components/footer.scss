@@ -1,0 +1,293 @@
+footer {
+  background: #001e50;
+  color: #fff;
+  border-top: 1px solid #96a3a8;
+
+  .hours {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #96a3a8;
+  }
+
+  .location,
+  .holidays {
+    width: 100%;
+  }
+
+  .address-cell,
+  .contact-cell {
+    display: flex;
+    padding-bottom: 19px;
+  }
+
+  .icon {
+    padding-right: 13px;
+    padding-bottom: 10px;
+
+    img {
+      height: 20px;
+    }
+  }
+
+  .phone-numbers,
+  .location-cell {
+    padding-left: 10px;
+  }
+
+  .phone-numbers {
+    display: flex;
+
+    .phone {
+      text-transform: capitalize;
+      font-weight: bold;
+
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+
+  .phone-numbers div:not(:first-child) {
+    padding-left: 25px;
+  }
+
+  // Holidays
+  .holidays {
+    text-transform: capitalize;
+
+    .title-cell {
+      padding-top: 25px;
+      margin-bottom: 10px;
+      font-size: 25px;
+      text-transform: none;
+
+      p:first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    .view-hours {
+      width: auto;
+
+      a {
+        display: flex;
+        font-size: 00.75rem;
+        line-height: 0.93rem;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-decoration: none;
+        text-transform: none;
+        transition: color 0.25s;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      span {
+        text-transform: capitalize;
+      }
+    }
+
+    .holiday-cell {
+      text-transform: capitalize;
+
+      p {
+        margin: 17px 0;
+        font-size: 17px;
+      }
+    }
+    .holiday-hours-title {
+      font-weight: bold;
+    }
+
+    .small-icon {
+      display: flex;
+      align-items: center;
+      img {
+        margin-left: 5px;
+        width: 15px;
+      }
+    }
+  }
+
+  // Menu
+
+  #footer-menu {
+    display: flex;
+    flex-flow: row wrap;
+
+    // menu
+    li {
+      list-style: none;
+      font-weight: 200;
+      width: 25%;
+      text-align: left;
+      text-transform: capitalize;
+      font-size: 20px;
+
+      a {
+        color: #fff;
+      }
+
+      // sub menu
+      ul.sub-menu {
+        li {
+          font-size: 15px;
+          border-right: none;
+          padding: 0;
+          width: auto;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .site-info {
+    padding: 25px 0;
+    font-size: 17px;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+// small
+@media screen and (max-width: 768px) {
+  footer {
+    padding-bottom: 56px;
+
+    .hours,
+    #footer-menu {
+      padding-top: 56px;
+      font-size: 15px;
+    }
+
+    .location {
+      padding-bottom: 0px;
+    }
+
+    .contact-cell {
+      padding-bottom: 0px;
+    }
+
+    .address-cell,
+    .contact-cell {
+      display: block;
+    }
+
+    .phone-numbers,
+    .location-cell {
+      padding-left: 0;
+    }
+
+    .phone-numbers {
+      display: flex;
+      flex-wrap: wrap;
+
+      div {
+        width: 100%;
+        padding-bottom: 19px;
+      }
+    }
+
+    .phone-numbers div:not(:first-child) {
+      padding-left: 0px;
+    }
+
+    .holidays {
+      padding-bottom: 0px;
+      .title-cell {
+        font-size: 18.75px;
+      }
+    }
+    // menu
+
+    ul#footer-menu li:nth-child(n + 3) {
+      margin-top: 19px;
+    }
+
+    ul#footer-menu {
+      li {
+        width: 50%;
+
+        ul.sub-menu {
+          li {
+            font-size: 15px;
+            border-right: none;
+            margin-bottom: 19px;
+          }
+
+          li:first-child {
+            padding-top: 19px;
+          }
+
+          li:last-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// medium
+@media print, screen and (min-width: 769px) {
+  footer {
+    padding-bottom: 56px;
+
+    .hours,
+    #footer-menu {
+      padding-top: 75px;
+      padding-bottom: 25px;
+    }
+
+    ul#footer-menu li:last-child {
+      margin-top: 25px;
+    }
+
+    ul#footer-menu {
+      li {
+        width: 33.33%;
+
+        ul.sub-menu {
+          li {
+            font-size: 15px;
+            margin-bottom: 25px;
+          }
+
+          li:first-child {
+            padding-top: 25px;
+          }
+
+          li:last-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// large
+@media print, screen and (min-width: 1029px) {
+  footer {
+    padding-bottom: 75px;
+
+    ul#footer-menu li:last-child {
+      margin-top: 0;
+    }
+
+    ul#footer-menu {
+      li {
+        width: 25%;
+
+        ul.sub-menu {
+          li {
+            font-size: 15px;
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+}

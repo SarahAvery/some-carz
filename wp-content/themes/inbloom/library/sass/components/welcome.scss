@@ -1,0 +1,171 @@
+#welcome {
+  background: #001e50;
+  color: #fff;
+
+  .wrapper-container {
+    max-width: 1434px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .banner-img {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 300px;
+  }
+
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .title {
+    padding-top: 56px;
+    padding-bottom: 19px;
+    font-size: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+      width: 100%;
+    }
+  }
+
+  .welcome-to {
+    font-weight: 700;
+    letter-spacing: 0.015rem;
+    line-height: normal;
+  }
+
+  .dealership-name {
+    letter-spacing: 0.015rem;
+    font-weight: 200;
+    line-height: 3rem;
+  }
+
+  .para {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  aside {
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+    .img {
+      width: 85%;
+      height: 300px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 10px;
+    }
+
+    .img_2 {
+      margin-left: 13%;
+    }
+
+    .img_3 {
+      margin-left: 5%;
+    }
+  }
+
+  .button-container {
+    width: 33.33%;
+  }
+}
+
+// small
+@media screen and (max-width: 768px) {
+  #welcome {
+    padding: 56px 0;
+    .wrapper-container {
+      padding-right: 1.4rem;
+      padding-left: 1.4rem;
+    }
+    .content {
+      font-size: 15px;
+    }
+
+    .welcome-to {
+      padding-bottom: 3.75px;
+      font-size: 30px;
+    }
+
+    .dealership-name {
+      font-size: 37.5px;
+    }
+    aside {
+      display: none;
+    }
+
+    .button-container {
+      width: 100%;
+    }
+  }
+}
+
+// medium
+@media print, screen and (min-width: 769px) {
+  #welcome {
+    padding: 56px 0;
+    .wrapper-container {
+      padding-right: 1.15rem;
+      padding-left: 1.15rem;
+    }
+    .content {
+      font-size: 0.85rem;
+      line-height: 1.25rem;
+      width: calc(100% - 0.625rem);
+      margin-left: 0.3125rem;
+      margin-right: 0.3125rem;
+    }
+
+    .welcome-to {
+      padding-bottom: 5px;
+      font-size: 40px;
+    }
+
+    .dealership-name {
+      font-size: 50px;
+    }
+
+    aside {
+      display: none;
+    }
+    .button-container {
+      width: 41.66%;
+    }
+  }
+}
+
+// large
+@media print, screen and (min-width: 1029px) {
+  #welcome {
+    padding: 75px 0;
+
+    .content {
+      width: calc(50% - 1.25rem);
+      margin-left: 0.625rem;
+      margin-right: 0.625rem;
+    }
+    .wrapper-container {
+      padding-right: 1.65rem;
+      padding-left: 1.65rem;
+    }
+    .title {
+      padding-top: 75px;
+      padding-bottom: 25px;
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .button-container {
+      width: 33.33%;
+    }
+  }
+}

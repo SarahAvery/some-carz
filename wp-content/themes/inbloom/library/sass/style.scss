@@ -1,0 +1,20 @@
+// Import variables and mixins.
+// @import "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+@import "generic/index.scss";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/index.scss";
+
+*,
+html,
+body {
+  font-size: 20px;
+  font-family: VWText, Helvetica Neue, Helvetica, Arial, sans-serif;
+}

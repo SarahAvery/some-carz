@@ -1,0 +1,13 @@
+{
+    "extends": [
+        "plugin:@wordpress/eslint-plugin/esnext",
+        "prettier"
+    ],
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "no-console": "off"
+    }
+}

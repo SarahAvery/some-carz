@@ -1,0 +1,129 @@
+// CARDS - Move later
+
+.grid-container {
+  font-weight: 400;
+  height: auto;
+  line-height: 25px;
+  max-width: 1434px;
+  padding: 0 1.4rem;
+  text-size-adjust: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+
+    .cell {
+      position: relative;
+      padding: 25px 0;
+      text-align: center;
+      margin: 0 0.625rem;
+      flex: 0 0 auto;
+      list-style: none;
+    }
+
+    .card-container {
+      .img {
+        background-size: cover;
+        background-position: 50%;
+        height: 150px;
+      }
+
+      .content {
+        padding: 25px 13px 0;
+      }
+    }
+
+    .title,
+    a {
+      text-transform: capitalize;
+    }
+    .heavy {
+      font-weight: 700;
+      letter-spacing: 0.01rem;
+      line-height: 1.5rem;
+      font-size: 1.25rem;
+    }
+
+    .subtitle {
+      margin: 13px 0 25px;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      font-weight: 400;
+      word-break: break-word;
+      word-wrap: break-word;
+    }
+
+    a {
+      color: #001e50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.75rem;
+      line-height: 0.93rem;
+      text-decoration: none;
+      cursor: pointer;
+
+      .icon {
+        margin-left: 13px;
+        height: 14px;
+        padding-left: 13px;
+        display: inline-flex;
+      }
+
+      span:hover {
+        border-bottom: 0.5px solid #001e50;
+      }
+    }
+  }
+}
+
+@media print, screen and (min-width: 1029px) {
+  .grid-container {
+    padding: 0 33px;
+    .grid {
+      .cell {
+        width: calc(25% - 1.25rem);
+        &:not(:first-child):before {
+          content: "";
+          background: #96a3a8;
+          display: block;
+          position: absolute;
+          top: 25px;
+          bottom: 25px;
+          left: -0.625rem !important;
+          width: 1px;
+        }
+      }
+    }
+  }
+}
+
+@media print, screen and (min-width: 769px) and (max-width: 1028px) {
+  .grid-container {
+    padding: 0 23px;
+    .grid {
+      .cell {
+        width: calc(50% - 1.25rem);
+        &:nth-child(n + 3) {
+          border-top: 1px solid #96a3a8;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    padding: 0 21px;
+    .grid {
+      .cell {
+        width: calc(100% - 0.625rem);
+        padding: 19px 0;
+        border-top: 1px solid #96a3a8;
+        margin: 0 0.3125rem;
+      }
+    }
+  }
+}

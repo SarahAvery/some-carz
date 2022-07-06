@@ -1,0 +1,133 @@
+#masthead {
+  background: #001e50;
+  color: #fff;
+  position: relative;
+
+  .site-branding {
+    font-style: italic;
+    border-bottom: 1px solid #dfe4e8;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo,
+  .header-information {
+    padding: 0.65rem 0;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+
+  .header-logo {
+    flex-grow: 1;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .site-title,
+  h1 {
+    font-size: 2rem;
+    padding-left: 1.65rem;
+  }
+
+  .contact-container {
+    justify-content: flex-end;
+    padding-right: 1.65rem;
+    text-align: right;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .phone span:not(:first-child) {
+    padding-left: 25px;
+  }
+}
+
+// small
+@media screen and (max-width: 768px) {
+  #masthead {
+    .header-logo {
+      display: none;
+    }
+  }
+  .mobile-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.65rem;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: all 0.25s ease;
+    height: 30px;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+}
+
+// medium
+@media print, screen and (min-width: 769px) {
+  #masthead {
+    .mobile-menu-button {
+      display: none;
+    }
+  }
+}
+
+@media print, screen and (max-width: 1028px) {
+  #masthead {
+    .header-information {
+      flex-grow: 1;
+    }
+    .address {
+      display: flex;
+      flex-grow: 1;
+
+      p {
+        width: auto;
+      }
+    }
+    .phone {
+      padding-left: 25px;
+      margin-left: 25px;
+      position: relative;
+      &::before {
+        content: "";
+        background: #dfe4e8;
+        margin: 0 0 0 -0.5px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 100%;
+      }
+    }
+    .phone span:not(:first-child) {
+      display: none;
+    }
+  }
+}
+
+// large
+// @media print, screen and (min-width: 1029px) {
+//   #masthead {
+//   }
+// }
