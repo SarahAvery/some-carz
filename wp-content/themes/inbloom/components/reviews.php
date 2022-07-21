@@ -14,8 +14,8 @@
       <div class="quote">
         <div class="quote-icon">
           <div class="icon">
-            <!-- <img src="http://localhost/inbloom.com/wp-content/uploads/2022/06/image-3.png" alt=""> -->
-            <img src="http://localhost/inbloom.com/wp-content/uploads/2022/06/left-quote.png" alt="">
+            <!-- <img src="<?= home_url() ?>/wp-content/uploads/2022/06/image-3.png" alt=""> -->
+            <img src="<?= home_url() ?>/wp-content/uploads/2022/06/left-quote.png" alt="">
           </div>
         </div>
         <div>

@@ -34,7 +34,7 @@
 				<div class="location">
 					<div class="address-cell">
 						<div class="icon">
-							<img src="http://localhost/inbloom.com/wp-content/uploads/2022/06/location-white-removebg-preview.png" alt="location icon">
+							<img src="<?= home_url() ?>/wp-content/uploads/2022/06/location-white-removebg-preview.png" alt="location icon">
 						</div>
 						<div class="location-cell">
 							<p class="address"><?="$number $street $city, $prov_terr $postal"?></p>
@@ -42,7 +42,7 @@
 					</div>
 					<div class="contact-cell">
 						<div class="icon">
-							<img src="http://localhost/inbloom.com/wp-content/uploads/2022/06/phone-white-removebg-preview.png" alt="phone icon">
+							<img src="<?= home_url() ?>/wp-content/uploads/2022/06/phone-white-removebg-preview.png" alt="phone icon">
 						</div>
 						<div class="phone-numbers">
 							<div class="sales-number">
@@ -71,7 +71,7 @@
 					<div class="view-hours">
 						<a>
 						<span>view department hours</span>
-						<div class="small-icon"><img src="http://localhost/inbloom.com/wp-content/uploads/2022/06/right-arrow-removebg-preview.png" alt="right arrow icon"></div>
+						<div class="small-icon"><img src="<?= home_url() ?>/wp-content/uploads/2022/06/right-arrow-removebg-preview.png" alt="right arrow icon"></div>
 						</a>
 					</div>
 					<div class="holiday-cell">
